@@ -17,6 +17,7 @@ The source code structure:
 .
 |- luckybird.py   the main proceture
 |- game
+
      |- __init__.py   modules used by luckybird.py
      |- config.py     configure file, global constant
      |- resources.py    import resources
