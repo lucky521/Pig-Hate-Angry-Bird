@@ -4,20 +4,16 @@ AngryBirdGame
 This is a Flying Game about AngryBird.
 
 
-
 This game is writtern by Python base on Pyglet.
 To learn more about Pyglet, you can refer to http://www.pyglet.org/
 
 
 
-
 The source code structure:
-
-
+[code]
 .
 |- luckybird.py   the main proceture
 |- game
-
      |- __init__.py   modules used by luckybird.py
      |- config.py     configure file, global constant
      |- resources.py    import resources
@@ -27,5 +23,4 @@ The source code structure:
      |- egg.py      Egg class is about the score, derived from PhysicalObject
      |- physicalobject.py   Base class, moving things
      |- load.py   instantiate and load all objects
-     
-     
+[/code]
