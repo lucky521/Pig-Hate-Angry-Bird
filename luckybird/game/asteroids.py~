@@ -1,0 +1,9 @@
+import physicalobject
+
+class bird(physicalobject.PhysicalObject):
+	
+	def __init__(self, *args, **kwargs):
+		super(Player, self).__init__(img=resources.player_image,
+						*args,**kwargs)
+
+		self.
