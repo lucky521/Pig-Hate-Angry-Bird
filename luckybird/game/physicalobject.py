@@ -17,7 +17,6 @@ class PhysicalObject(pyglet.sprite.Sprite):
 		self.y += self.velocity_y * dt
 		self.check_bounds()
 
-
 	def check_bounds(self):
 		min_x = -self.image.width/2
 		min_y = -self.image.height/2
@@ -38,4 +37,12 @@ class PhysicalObject(pyglet.sprite.Sprite):
 		dis = util.distance(self.position, another_object.position)
 		return (dis <= collision_dis)
 
+	# one point is in object's internal?
+	def is_internal(self, point=(0,0)):
+		if util.abs_length(self.x, point[0]) > self.image.width/2:
+			return False
+		if util.abs_length(self.y, point[1]) > self.image.height/2:
+			return False
+		return True
+		
 
